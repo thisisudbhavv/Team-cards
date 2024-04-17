@@ -1,12 +1,51 @@
-You have to create a simple React App which has a reusable Card Component which has the following
- - Ability to pass in props to the Component
- - The Card must show a person's
-    - Name
-    - A short description
-    - LinkedIn, Twitter and other Social Media Handle buttons
-    - Interests Section
- - You can assume that this is kind of an e-business card and feel free to put in your creativity
- - Additional & Slightly advanced:
-    - Create a page where you can add these kind of Cards by taking input from the user
-    - Create a backend server where these cards get stored in a DB and can handle basic CRUD operations
-    - Give the feature to perform CRUD operations from the frontend (Can be restricted to the admin only as well)
+# E-Business Card React App
+
+This is a simple React App that allows users to create and manage e-business cards. It includes a reusable Card Component for displaying information about a person, such as name, description, social media handles, and interests. Additionally, it features the ability to add, edit, delete, and view these cards through a user-friendly interface.
+
+## Features
+
+- **Reusable Card Component:** 
+  - The Card Component accepts props for name, description, social media handles, and interests, making it versatile for various users.
+- **Dynamic Content:**
+  - Users can input their information and interests, which will be displayed on their e-business card.
+- **CRUD Operations:**
+  - Create, Read, Update, and Delete operations are supported both from the frontend and backend.
+- **User Authentication:**
+  - Administrators can perform CRUD operations, while regular users can only view cards.
+
+## Additional Features
+
+- **Input Form Page:**
+  - Users can input their information through a user-friendly form.
+- **Backend Server:**
+  - The app has a backend server that stores cards in a database.
+- **Database Integration:**
+  - Cards are stored in a database, enabling efficient storage and retrieval.
+- **Security:**
+  - User authentication ensures that only authorized users can perform CRUD operations.
+- **Admin Privileges:**
+  - Administrators have exclusive access to CRUD operations, ensuring data integrity and security.
+- **Responsive Design:**
+  - The app is designed to be responsive, ensuring optimal viewing across various devices.
+
+## Technologies Used
+
+- **Frontend:**
+  - React.js
+  - HTML
+  - CSS
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/e-business-card-app.git
+2. Install dependencies:
+   cd e-business-card-app
+   npm install
+3. Start the frontend and backend servers:
+   npm start
