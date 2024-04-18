@@ -7,6 +7,12 @@ export function AddCard() {
     const [interests, setInterests] = useState([]);
     const [linkedin, setLinkedIn] = useState("");
     const [x, setX] = useState("");
+
+    const handler = (e) => {
+        const value = e.target.value;
+        const array = value.split(",");
+        setInterests(array);
+    }
     
     return <div id='addcard'>
         <h1>Input your details</h1>
@@ -18,10 +24,7 @@ export function AddCard() {
             const value = e.target.value;
             setBio(e.target.value);
         }}></input>
-        <input type='text' placeholder='Interests'onChange={function(e){
-            const value = e.target.value;
-            setInterests(e.target.value);
-        }}></input>
+        <input type='text' placeholder='Comma seperated Interests'onChange={handler}></input>
         <input type='text' placeholder='LinkedIn Link'onChange={function(e){
             const value = e.target.value;
             setLinkedIn(e.target.value);
