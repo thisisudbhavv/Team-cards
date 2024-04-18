@@ -1,11 +1,12 @@
+import './cards.css'
 
 export function Card({teams}) {
     
-    return <div className='card'>
-        <h1>Team cards are below</h1>
+    return <div className='group'>
+        <h1 className='heading'>Team cards are below</h1>
         {teams.map(function(team){
-            return <div>
-                <h2>{team.name}</h2>
+            return <div className='card'>
+                <h1>{team.name}</h1>
                 <p>{team.bio}</p>
                 <h3>Interests</h3>
                 <ul>
@@ -13,8 +14,8 @@ export function Card({teams}) {
                         <li key={index}>{interest}</li>
                     ))}
                 </ul>
-                <button onClick={team.linkedin}>LinkedIn</button>
-                <button onClick={team.x}>LinkedIn</button>
+                <button className='cardButton' onClick={() => window.open(team.linkedin)}>LinkedIn</button>
+                <button className='cardButton' onClick={() => window.open(team.x)}>X</button>
             </div>
         })}
     </div>

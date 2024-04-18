@@ -3,11 +3,11 @@ body {
     min-width: 320px;
     min-height: 100vh;
   }
-  /* #addcard{
-    position: relative;
+  #addcard{
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
-  } */
+  }
 
   h1 {
     font-size: 2.0em;
@@ -22,7 +22,7 @@ body {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: #f2f2f2;
     cursor: pointer;
   }
   
@@ -38,10 +38,10 @@ body {
     cursor: pointer;
     transition: background-color 0.25s;
     transition: color 0.25s;
+    color: #f2f2f2;
   }
   button:hover {
     background-color: #646cff;
-    color: #1a1a1a;
   }
   button:focus,
   button:focus-visible {
