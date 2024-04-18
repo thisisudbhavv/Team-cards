@@ -33,7 +33,7 @@ export function AddCard() {
             const value = e.target.value;
             setX(e.target.value);
         }}></input>
-        <button onClick={() =>{
+        <button className='addButton' onClick={() =>{
             fetch("http://localhost:3000/add-team", {
                 method: "POST",
                 body: JSON.stringify({

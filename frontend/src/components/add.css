@@ -26,7 +26,7 @@ body {
     cursor: pointer;
   }
   
-  button {
+  .addButton {
     margin: 5px;
     border-radius: 8px;
     border: 1px solid transparent;
@@ -40,7 +40,7 @@ body {
     transition: color 0.25s;
     color: #f2f2f2;
   }
-  button:hover {
+  .addButton:hover {
     background-color: #646cff;
   }
   button:focus,
