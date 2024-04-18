@@ -15,7 +15,7 @@ export function AddCard() {
     }
     
     return <div id='addcard'>
-        <h1>Input your details</h1>
+        <h1>Input your details for your card</h1>
         <input type='text' placeholder='Name' onChange={function(e){
             const value = e.target.value;
             setName(e.target.value);

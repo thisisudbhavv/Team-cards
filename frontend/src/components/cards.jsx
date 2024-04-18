@@ -15,7 +15,7 @@ export function Card({teams}) {
                     ))}
                 </ul>
                 <button className='cardButton' onClick={() => window.open(team.linkedin)}>LinkedIn</button>
-                <button className='cardButton' onClick={() => window.open(team.x)}>X</button>
+                <button className='cardButton' onClick={() => window.open(team.x)}>X (Twitter)</button>
             </div>
         })}
     </div>
