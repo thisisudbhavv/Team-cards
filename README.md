@@ -43,11 +43,16 @@ This is a simple React App that allows users to create and manage e-business car
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/e-business-card-app.git
+   git clone https://github.com/thisisudbhavv/e-business-card-app.git
 2. Install dependencies:
    ```bash
    cd e-business-card-app
    npm install
-3. Start the frontend and backend servers:
+3. Start the backend servers:
    ```bash
-   npm start
+   cd backend
+   npx nodemon index.js
+4. Start the frontend servers:
+   ```bash
+   cd frontend
+   npx run dev
